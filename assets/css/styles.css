@@ -166,7 +166,13 @@ li {
     margin-bottom: 50px;
 }
 
-.btn {
+.btncards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btnprim, .btnsec {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -177,8 +183,22 @@ li {
     transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btnsec {
     background: linear-gradient(135deg, #a618df, #00aaff);
+}
+
+.btnsec:hover {
+    background: linear-gradient(135deg, #00aaff, #a618df);
+    transform: scale(1.1);
+}
+
+.btnprim:hover {
+    background: linear-gradient(135deg, #a618df, #00aaff);
+    transform: scale(1.1);
+}
+
+.buttonsolo {
+    margin-top: 45px;
 }
 
 .project-card {
