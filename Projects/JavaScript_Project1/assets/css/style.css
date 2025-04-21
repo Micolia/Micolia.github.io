@@ -1,0 +1,57 @@
+* {
+    margin: 0
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+    background: #000000;
+    color: white;
+}
+
+.card {
+    color: rgba(255, 255, 255, 0.931);
+    width: 180px;
+    height: 270px;
+    border-radius: 5px;
+    background: #000000;
+    border: 3px solid #00CFFD;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .img-card {
+    height: 100px;
+    background-image: url("../img/laptop.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.card button {
+    background: #000000;
+    color: #00CFFD;
+    border: 2px solid #00CFFD;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.card button:hover {
+    background: #00CFFD;
+    border: 2px solid #00CFFD;
+    color: #000000;
+}
+
+.total-section {
+    padding: 35px;
+    display: flex;
+    margin-left: 10px;
+}

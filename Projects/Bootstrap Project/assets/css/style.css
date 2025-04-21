@@ -1,0 +1,157 @@
+
+.container-fluid img{
+
+    width: 100px; height: auto;
+    display: block;
+    margin-left: 0;
+    padding-left: 10px;
+
+}
+
+.card:hover{
+
+    background-color: #f7f9fd;
+    border-color: #c1c1c1;
+    border-width: 2pt;
+
+
+}
+.card-title {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 17pt;
+
+}
+
+.text1card {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 13pt;
+    margin-bottom: 4%;
+
+}
+
+.text2card {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.text2card i, .card-text {
+
+    color: #707070;
+}
+
+
+.card-footer {
+
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    gap: 5%;
+}
+
+.card-footer p {
+
+    margin-top: 10pt;
+    margin-bottom: 0pt;
+}
+
+.form {
+    text-align: center;
+}
+
+.form .btn {
+    display: inline-block;
+
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input {
+
+    margin-top: 2%;
+
+}
+
+.form h5{
+
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 20pt;
+}
+
+.form a {
+
+    margin-bottom: 2%
+}
+
+@media (min-width: 768px) {
+    .form input {
+        width: 50%;
+
+    }
+}
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.footer img {
+
+    width: 100px;
+    height: auto;
+    margin: 0;
+
+}
+
+
+.footerp1 {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 13pt;
+    text-decoration: line-through;
+}
+
+.footerp2 {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+
+
+
+}
+
+.footer img{
+
+    margin-bottom:1%
+}
+
+
+.company {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+

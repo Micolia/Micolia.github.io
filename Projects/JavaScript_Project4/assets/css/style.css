@@ -1,0 +1,93 @@
+* {
+    margin: 0
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Lexend", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #a618df, #00aaff);
+    color: white;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.list-container {
+    width: 400px;
+    padding: 30px 20px;
+    background-color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #a618df;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.additems, .summary, .total, .done {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mylist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+h1 {
+    text-shadow: 4px 4px 6px rgba(166, 24, 223, 0.7)
+}
+
+button, input {
+    border: 0;
+    background: linear-gradient(135deg, #a618df, #00aaff);
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: "Lexend", serif;
+    margin: 20px 0 20px 0;
+}
+
+#remove {
+    border: 2px solid #fffb00;
+    border-radius: 8px;
+    color: #fffb00;
+    background: transparent;
+    padding: 2px 8px;
+    margin: 0;
+}
+
+#todo-input::placeholder {
+    color: white;
+}
+
+.id {
+    color: #fffb00;
+}
+
+.summary {
+    margin-top: 30px;
+}
+
+.totalenumber, .donenumber {
+    color: #00aaff;
+}
+
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
