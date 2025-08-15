@@ -55,8 +55,35 @@ body {
 }
 
 .navbar-nav .nav-link:hover::after {
-    width: 80%;
-    left: 10%;
+    width: 60%;
+    left: 20%;
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+        text-align: center;
+        padding: 12px 16px !important;
+    }
+    
+    .navbar-nav .nav-link::after {
+        width: 0;
+        height: 2px;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .navbar-nav .nav-link:hover::after {
+        width: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #navbarSupportedContent {
+        padding: 10px 20px;
+    }
 }
 
 .navbar-nav {
@@ -348,7 +375,7 @@ h1 {
 
 .date, .langlevel, .certificate {
     font-size: 0.85rem;
-    color: #c884ff;
+    color: #33ccff;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
