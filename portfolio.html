@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="assets/img/laptop.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description" content="Web development projects by Micol Benaglia — Senior Dynamics 365 Consultant &amp; Full Stack Developer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────── -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <div class="logo-mark">MB</div>
+        <span class="logo-name">Micol B.</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="https://github.com/Micolia" class="nav-link nav-cta" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="navMobile" role="navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+    <a href="https://github.com/Micolia" class="nav-link nav-cta" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- ── Page Hero ──────────────────────────────────── -->
+  <section class="portfolio-hero" aria-label="Portfolio header">
+    <div class="page-hero-bg">
+      <img src="assets/img/bckg3.jpg" alt="" class="hero-bg-img" aria-hidden="true">
+      <div class="hero-orb hero-orb-1" style="width:320px;height:320px;top:-60px;right:8%" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" style="width:260px;height:260px;bottom:0;left:4%" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="reveal">
+        <span class="section-label">My Projects</span>
+        <h1>Web Development <span class="gradient-text">Projects</span></h1>
+        <p>Just for fun ☺️ </p>
+      </div>
+    </div>
+    <a href="#portfolio-grid" class="scroll-down-arrow" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- ── Filter ─────────────────────────────────────── -->
+  <div class="portfolio-filter" aria-label="Filter projects">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="html-css">HTML &amp; CSS</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Portfolio Grid ─────────────────────────────── -->
+  <section class="portfolio-grid-section" id="portfolio-grid" aria-label="Project list">
+    <div class="container">
+      <div class="portfolio-grid">
+
+        <!-- AI -->
+        <article class="portfolio-card reveal" data-category="ai">
+          <div class="portfolio-card-image">
+            <img src="assets/img/preview_ai1.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">AI Automation Finder</h3>
+            <p>A diagnostic platform to map AI automation opportunities and generate value-based commercial proposals.</p>
+            <div class="card-actions"><a href="https://github.com/Micolia/automation-opportunity-finder" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-1" data-category="ai">
+          <div class="portfolio-card-image">
+            <img src="assets/img/project_js6.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Fitness &amp; Nutrition Tracker</h3>
+            <p>Fitness &amp; nutrition tracker built with GitHub Copilot.</p>
+            <div class="card-actions"><a href="Projects/JavaScript_Project6/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/fitness-nutrition-tracker" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <!-- Full Stack -->
+        <article class="portfolio-card reveal reveal-delay-2" data-category="fullstack">
+          <div class="portfolio-card-image">
+            <img src="assets/img/previewtravel.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Travel Agency Platform</h3>
+            <p>Full-stack travel agency platform built with React, Node.js, Express and PostgreSQL.</p>
+            <div class="card-actions"><a href="https://github.com/Micolia/travel-agency-fullstack" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <!-- Backend -->
+        <article class="portfolio-card reveal" data-category="backend">
+          <div class="portfolio-card-image">
+            <img src="assets/img/backend5.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Coffee Shop API Testing</h3>
+            <p>API testing project for a fictional coffee shop using Jest and Supertest.</p>
+            <div class="card-actions"><a href="https://github.com/Micolia/api-testing-jest-supertest" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-1" data-category="backend">
+          <div class="portfolio-card-image">
+            <img src="assets/img/backend4.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">User Auth API (JWT)</h3>
+            <p>User registration &amp; login management API with JWT authentication.</p>
+            <div class="card-actions"><a href="https://github.com/Micolia/user-profile-backend" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-2" data-category="backend">
+          <div class="portfolio-card-image">
+            <img src="assets/img/backend3.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Jewelry Store REST API</h3>
+            <p>A REST API for managing the inventory of a fictional jewelry store.</p>
+            <div class="card-actions"><a href="https://github.com/Micolia/jewelry-store-api" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="backend">
+          <div class="portfolio-card-image">
+            <img src="assets/img/backend2.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">LikeMe — Posts App</h3>
+            <p>Web application that displays posts with like functionality.</p>
+            <div class="card-actions"><a href="https://github.com/Micolia/likeme-app" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-1" data-category="backend">
+          <div class="portfolio-card-image">
+            <img src="assets/img/backend1.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Music App Backend</h3>
+            <p>Songs management app with full CRUD operations.</p>
+            <div class="card-actions"><a href="https://github.com/Micolia/music-app-backend" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <!-- JavaScript -->
+        <article class="portfolio-card reveal reveal-delay-2" data-category="javascript">
+          <div class="portfolio-card-image">
+            <img src="assets/img/preview_react1.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Pizzeria Website</h3>
+            <p>A fully functional static website for a pizzeria, built with React.</p>
+            <div class="card-actions"><a href="https://github.com/Micolia/pizzeria-website-react" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="javascript">
+          <div class="portfolio-card-image">
+            <img src="Projects/JavaScript_Project5/assets/img/preview.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Currency Converter</h3>
+            <p>Currency converter for Chilean Pesos with a 10-day historical trend chart.</p>
+            <div class="card-actions"><a href="Projects/JavaScript_Project5/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/currency-converter" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-1" data-category="javascript">
+          <div class="portfolio-card-image">
+            <img src="Projects/JavaScript_Project4/assets/img/preview.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Task Manager</h3>
+            <p>Task manager with real-time updates and task completion tracking.</p>
+            <div class="card-actions"><a href="Projects/JavaScript_Project4/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/to-do-list" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-2" data-category="javascript">
+          <div class="portfolio-card-image">
+            <img src="Projects/JavaScript_Project3/assets/img/preview_card.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Real Estate Website</h3>
+            <p>Real estate website created with JavaScript and Bootstrap.</p>
+            <div class="card-actions"><a href="Projects/JavaScript_Project3/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/real-estate-website" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="javascript">
+          <div class="portfolio-card-image">
+            <img src="Projects/JavaScript_Project2/assets/img/preview_card.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">JS Exercises</h3>
+            <p>Tools for counting and limiting products and for validating passwords.</p>
+            <div class="card-actions"><a href="Projects/JavaScript_Project2/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/javascript-exercises" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-1" data-category="javascript">
+          <div class="portfolio-card-image">
+            <img src="Projects/JavaScript_Project1/assets/img/preview_card.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Price Calculator</h3>
+            <p>Product price calculator that updates the total based on quantity.</p>
+            <div class="card-actions"><a href="Projects/JavaScript_Project1/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/product-price-calculator" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <!-- HTML & CSS -->
+        <article class="portfolio-card reveal reveal-delay-2" data-category="html-css">
+          <div class="portfolio-card-image">
+            <img src="assets/img/project7.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Tourism Website</h3>
+            <p>A responsive layout that simulates a tourism website.</p>
+            <div class="card-actions"><a href="Projects/CSS_Project4/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/tourism-website-layout" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="html-css">
+          <div class="portfolio-card-image">
+            <img src="assets/img/project6.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Video Game Store</h3>
+            <p>A responsive layout that simulates a video game e-commerce.</p>
+            <div class="card-actions"><a href="Projects/CSS_Project3/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/video-game-store-layout" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-1" data-category="html-css">
+          <div class="portfolio-card-image">
+            <img src="assets/img/project5.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Jewelry Store Layout</h3>
+            <p>A static layout simulating a jewelry e-commerce using CSS Grid.</p>
+            <div class="card-actions"><a href="Projects/CSS_Project2/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/jewelry-store-layout" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-2" data-category="html-css">
+          <div class="portfolio-card-image">
+            <img src="assets/img/project4.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Messaging App Layout</h3>
+            <p>A static layout for a messaging app interface created with Flexbox.</p>
+            <div class="card-actions"><a href="Projects/CSS_Project1/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/messaging-app-layout" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="html-css">
+          <div class="portfolio-card-image">
+            <img src="assets/img/project3.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Coupon Store Layout</h3>
+            <p>A responsive layout for a coupons shop created using Bootstrap.</p>
+            <div class="card-actions"><a href="Projects/Bootstrap Project/index.html" class="btn-card btn-card-live">View page</a>
+                <a href="https://github.com/Micolia/coupon-store-layout" class="btn-card btn-card-code" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal reveal-delay-1" data-category="html-css">
+          <div class="portfolio-card-image">
+            <img src="assets/img/project2.png" alt="" class="card-img">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="card-title">Iguanas Landing Page</h3>
+            <p>A descriptive landing page dedicated to iguanas.</p>
+            <div class="card-actions"><a href="Projects/Flex Project/index.html" class="btn-card btn-card-live">View page</a></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-name">Micol B.</div>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/Micolia" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/micol-benaglia/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

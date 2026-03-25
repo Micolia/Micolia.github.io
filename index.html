@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="assets/img/laptop.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description" content="Senior Dynamics 365 &amp; Power Platform Consultant — CRM strategy, digital transformation &amp; web development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────── -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <div class="logo-mark">MB</div>
+        <span class="logo-name">Micol B.</span>
+      </a>
+      <div class="nav-links">
+        <a href="#expertise"   class="nav-link">About</a>
+        <a href="#cv"          class="nav-link">CV</a>
+        <a href="#education"   class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#languages"   class="nav-link">Languages</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="#contact"     class="nav-link nav-cta">Contact</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="navMobile" role="navigation">
+    <a href="#expertise"   class="nav-link">About</a>
+    <a href="#cv"          class="nav-link">CV</a>
+    <a href="#education"   class="nav-link">Education</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#languages"   class="nav-link">Languages</a>
+    <a href="portfolio.html" class="nav-link">Portfolio</a>
+    <a href="#contact"     class="nav-link nav-cta">Contact</a>
+  </div>
+
+  <!-- ── Hero ───────────────────────────────────────── -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-bg">
+      <img src="assets/img/office1.jpg" alt="" class="hero-bg-img" aria-hidden="true">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-split">
+
+        <!-- Left: text -->
+        <div class="hero-content">
+
+          <div class="hero-badge reveal">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Business &amp; IT
+          </div>
+
+          <h1 class="hero-title reveal reveal-delay-1">
+            Micol B.
+          </h1>
+          <p class="hero-role reveal reveal-delay-1"><span class="gradient-text">Senior Dynamics 365 &amp; Power Platform Consultant</span></p>
+
+          <div class="hero-profile reveal reveal-delay-2">
+            <div class="hero-profile-links">
+              <a href="https://www.linkedin.com/in/micol-benaglia/" class="profile-link-pill" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/Micolia" class="profile-link-pill" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-actions reveal reveal-delay-3">
+            <a href="portfolio.html" class="btn btn-primary">
+              My Projects
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#cv" class="btn btn-ghost btn-ghost-colored">View CV</a>
+          </div>
+
+        </div>
+
+        <!-- Right: photo -->
+        <div class="hero-photo reveal reveal-delay-2">
+          <img src="assets/img/portraitq.png" alt="Micol" />
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-arrow">&#8964;</div>
+    </div>
+  </section>
+
+  <!-- ── Expertise ──────────────────────────────────── -->
+  <section class="section section-alt" id="expertise" aria-label="Expertise">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">About me</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>International Development</h3>
+          <p>Led the market entry of two German companies into the Italian market, acting as the primary contact point and handling both marketing and business development responsibilities.</p>
+          <div class="service-tags">
+            <span class="tag tag-green">Business Development</span>
+            <span class="tag tag-green">Market Research</span>
+            <span class="tag tag-green">Partner Management</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>IT Consulting</h3>
+          <p>Contributed to the digital transformation of businesses by developing and optimizing customer solutions in Microsoft Business Applications, streamlining processes and enhancing operational efficiency.</p>
+          <div class="service-tags">
+            <span class="tag">Dynamics 365</span>
+            <span class="tag">Power Platform</span>
+            <span class="tag">CRM</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>CRM</h3>
+          <p>Planned and executed CRM strategies, boosting sales and revenue growth through effective customer relationship management approaches.</p>
+          <div class="service-tags">
+            <span class="tag tag-purple">CRM Strategy</span>
+            <span class="tag tag-purple">Marketing Automation</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-4">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>Marketing</h3>
+          <p>Developed and implemented highly targeted marketing strategies tailored to specific markets, resulting in increased brand recognition, customer engagement, and sales growth.</p>
+          <div class="service-tags">
+            <span class="tag tag-cyan">Marketing Strategy</span>
+            <span class="tag tag-cyan">Analytics</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CV ─────────────────────────────────────────── -->
+  <section class="section section-alt" id="cv" aria-label="Curriculum Vitae">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">Background</span>
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <p class="section-desc">6 years across CRM, digital transformation, international business, and marketing.</p>
+      </div>
+
+      <div class="cv-single">
+
+        <!-- Core Skills -->
+        <div class="cv-section reveal">
+          <h2 class="cv-section-title">Core Skills</h2>
+          <div class="cv-skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Dynamics 365 &amp; Power Platform</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">CRM Strategy</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Business Development</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Marketing &amp; Automation</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="cv-section reveal">
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-period">Mar 2024 &ndash; Present</div>
+              <div class="timeline-title">Senior Dynamics 365 &amp; Power Platform Consultant</div>
+              <div class="timeline-company">Arvato Systems · Leipzig, Germany</div>
+              <ul class="timeline-bullets">
+                <li>Executing end-to-end CRM and digital transformation projects using Microsoft technologies.</li>
+                <li>Consulting and supporting clients in Retail, Energy, Utilities, and Manufacturing in planning, designing, and implementing CRM processes.</li>
+                <li>Analyzing customer-specific requirements and optimizing or designing new business processes.</li>
+                <li>Providing hands-on training to clients, enhancing their proficiency with the system.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Dynamics 365</span>
+                <span class="tag">Power Platform</span>
+                <span class="tag">CRM</span>
+                <span class="tag">Project Management</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Sep 2023 &ndash; Feb 2024</div>
+              <div class="timeline-title">Dynamics 365 CE Consultant</div>
+              <div class="timeline-company">Fellowmind · Paderborn, Germany</div>
+              <ul class="timeline-bullets">
+                <li>Development and optimisation of new and/or existing customer solutions in Microsoft Dynamics 365.</li>
+                <li>Implementation of customers' technical requirements in efficient software solutions.</li>
+                <li>Creation of technical documentation to expand knowledge management.</li>
+                <li>Preparation of systems for demos.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Dynamics 365</span>
+                <span class="tag">CRM</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Dec 2022 &ndash; Aug 2023</div>
+              <div class="timeline-title">CRM Manager</div>
+              <div class="timeline-company">Cali Move · Leipzig, Germany</div>
+              <ul class="timeline-bullets">
+                <li>Built and operated CRM campaigns to improve activation, engagement, and retention.</li>
+                <li>Analyzed data and metrics to evaluate the effectiveness of campaigns and made data-driven decisions.</li>
+                <li>Designed, built, and implemented marketing automation workflows.</li>
+                <li>Successfully created a website to host the company blog.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-purple">Marketing Automation</span>
+                <span class="tag tag-purple">Email Marketing</span>
+                <span class="tag tag-purple">SEO</span>
+                <span class="tag tag-purple">CRM</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Mar 2021 &ndash; Sep 2022</div>
+              <div class="timeline-title">Marketing Manager Italy</div>
+              <div class="timeline-company">F&amp;P · Leipzig, Germany</div>
+              <ul class="timeline-bullets">
+                <li>Led the internationalization of a dating website in Italy.</li>
+                <li>Managed relationships with Italian agencies and collaboration partners.</li>
+                <li>Gathered information on competitor activities and market trends to enhance strategic decision-making.</li>
+                <li>Reviewed performance data to monitor and measure productivity, goals progress, and activity levels.</li>
+                <li>Managed events and sponsorships.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-green">Market Research</span>
+                <span class="tag tag-green">Business Development</span>
+                <span class="tag tag-green">Partner Management</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Apr 2020 &ndash; Feb 2021</div>
+              <div class="timeline-title">Marketing and Sales Italy</div>
+              <div class="timeline-company">1Heiz Holzpellets · Leipzig, Germany</div>
+              <ul class="timeline-bullets">
+                <li>Managed the trade with Italy: dealt with companies, retailers, and customers.</li>
+                <li>Designed the go-to-market plan to enter the Italian market.</li>
+                <li>Actively participated in HR activities.</li>
+                <li>Supported the development of a website for Italian customers.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-green">International Trade</span>
+                <span class="tag tag-green">Business Development</span>
+                <span class="tag tag-green">Marketing Strategy</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Feb 2020 – Mar 2020</div>
+              <div class="timeline-title">Marketing Intern <span class="internship-badge">University Internship</span></div>
+              <div class="timeline-company">ITKAM – Italian Chamber of Commerce for Germany · Leipzig, Germany</div>
+              <ul class="timeline-bullets">
+                <li>Supported the organization of events in Italy and Germany for companies from both countries.</li>
+                <li>Conducted market development activities.</li>
+                <li>Searched for commercial counterparts for Italian and German companies.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Business Development</span>
+                <span class="tag">Market Research</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Jul 2019 – Aug 2019</div>
+              <div class="timeline-title">Editorial Assistant <span class="internship-badge">University Internship</span></div>
+              <div class="timeline-company">Seminario Veronelli · Bergamo, Italy</div>
+              <ul class="timeline-bullets">
+                <li>Supported the editorial team in the creation of the "Guida Oro I vini di Veronelli 2020".</li>
+                <li>Contacted the wineries featured in the guide to verify the accuracy of the data to be published.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Editorial</span>
+                <span class="tag">Content Production</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Jan 2019 – Feb 2019</div>
+              <div class="timeline-title">Export Sales Assistant <span class="internship-badge">University Internship</span></div>
+              <div class="timeline-company">Bossong · Bergamo, Italy</div>
+              <ul class="timeline-bullets">
+                <li>Supported the Export Manager in identifying potential clients in Germany.</li>
+                <li>Researched companies and initiated first contact to find the most relevant internal decision-maker.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Export Sales</span>
+                <span class="tag">Market Research</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Certifications ────────────────────────────── -->
+  <section class="section section-alt" id="certifications" aria-label="Certifications">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">D365 & Power Platform</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="cv-single">
+        <div class="cv-section reveal">
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-period">Microsoft</div>
+              <div class="timeline-title">Dynamics 365 Customer Experience Analyst Associate</div>
+              <div class="timeline-company">Microsoft Certified</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Microsoft</div>
+              <div class="timeline-title">Power Platform Solution Architect Expert</div>
+              <div class="timeline-company">Microsoft Certified</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Microsoft</div>
+              <div class="timeline-title">Power Platform Functional Consultant Associate</div>
+              <div class="timeline-company">Microsoft Certified</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">Microsoft</div>
+              <div class="timeline-title">Dynamics 365 Customer Insights (Journeys) Functional Consultant Associate</div>
+              <div class="timeline-company">Microsoft Certified</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Education ────────────────────────────────── -->
+  <section class="section section-alt" id="education" aria-label="Education">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="cv-single">
+        <div class="cv-section reveal">
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-period">2024 – 2025</div>
+              <div class="timeline-title">Full Stack Web Development &mdash; Coding Bootcamp</div>
+              <div class="timeline-company">Desafío Latam · Chile (Remote)</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">2021 – 2022</div>
+              <div class="timeline-title">MBA &mdash; Master of Business Administration</div>
+              <div class="timeline-company">IU Internationale Hochschule · Germany</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">2018 – 2020</div>
+              <div class="timeline-title">Master's Degree in European and Pan-American Languages and Literatures</div>
+              <div class="timeline-company">University of Bergamo · Italy</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">2019 – 2020</div>
+              <div class="timeline-title">Erasmus Program &mdash; Master, Philologische Fakultät</div>
+              <div class="timeline-company">Universität Leipzig · Germany</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">2015 – 2019</div>
+              <div class="timeline-title">Bachelor's Degree in Modern Foreign Languages and Literatures</div>
+              <div class="timeline-company">University of Bergamo · Italy</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Languages ─────────────────────────────── -->
+  <section class="section section-alt" id="languages" aria-label="Languages">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <h2 class="section-title">Languages</h2>
+      </div>
+
+      <div class="lang-grid reveal">
+        <div class="lang-card">
+          <div class="lang-name">Italian</div>
+          <div class="lang-level">Native</div>
+        </div>
+        <div class="lang-card">
+          <div class="lang-name">German</div>
+          <div class="lang-level">Proficient</div>
+        </div>
+        <div class="lang-card">
+          <div class="lang-name">English</div>
+          <div class="lang-level">Proficient</div>
+        </div>
+        <div class="lang-card">
+          <div class="lang-name">Spanish</div>
+          <div class="lang-level">Advanced</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Contact CTA ────────────────────────────────── -->
+  <section class="section-cta section-alt" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-orb cta-orb-1" aria-hidden="true"></div>
+        <div class="cta-orb cta-orb-2" aria-hidden="true"></div>
+        <h2>Let's work together</h2>
+        <div class="cta-actions">
+          <a href="https://www.linkedin.com/in/micol-benaglia/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-name">Micol B.</div>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/Micolia" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/micol-benaglia/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

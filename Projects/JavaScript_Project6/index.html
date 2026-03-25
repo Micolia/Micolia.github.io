@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Nutrition Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏋️ Fitness Tracker 🥗</h1>
+            <p class="subtitle">Track your progress day by day</p>
+        </header>
+
+        <div class="main-grid">
+            <!-- Meals Section -->
+            <section class="card meals-section">
+                <h2>🍽️ Today's Meals</h2>
+                <form id="meal-form" class="input-form">
+                    <input type="text" id="meal-name" placeholder="What did you eat?" required>
+                    <input type="number" id="meal-calories" placeholder="Calories (kcal)" min="0">
+                    <input type="time" id="meal-time" required>
+                    <button type="submit" class="btn btn-primary">Add Meal</button>
+                </form>
+                <div id="meals-list" class="items-list"></div>
+                <div class="summary">
+                    <strong>Total Calories:</strong> <span id="total-calories">0</span> kcal
+                </div>
+            </section>
+
+            <!-- Workouts Section -->
+            <section class="card workouts-section">
+                <h2>💪 Today's Workouts</h2>
+                <form id="workout-form" class="input-form">
+                    <input type="text" id="workout-name" placeholder="Workout type" required>
+                    <input type="number" id="workout-duration" placeholder="Duration (min)" min="1" required>
+                    <input type="time" id="workout-time" required>
+                    <button type="submit" class="btn btn-success">Add Workout</button>
+                </form>
+                <div id="workouts-list" class="items-list"></div>
+                <div class="summary">
+                    <strong>Total Time:</strong> <span id="total-duration">0</span> minutes
+                </div>
+            </section>
+        </div>
+
+        <!-- Weekly Statistics -->
+        <section class="card stats-section">
+            <h2>📊 Weekly Summary</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-label">Active Days</span>
+                    <span class="stat-value" id="active-days">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Meals Logged</span>
+                    <span class="stat-value" id="total-meals">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Workouts Done</span>
+                    <span class="stat-value" id="total-workouts">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Avg Cal/Day</span>
+                    <span class="stat-value" id="avg-calories">0</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <button id="clear-today" class="btn btn-warning">Clear Today</button>
+            <button id="clear-all" class="btn btn-danger">Clear All</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
